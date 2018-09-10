@@ -1,16 +1,5 @@
-allow_list:
-    - usr/bin/vim.gtk:
-        - /dev
-    - usr/bin/git:
-        - /dev
-
 add_map:
     - bin/bash: all
-    - usr/bin/vim.gtk: 
-        - /usr
-        - /etc
-    - usr/bin/git:
-        - /usr
     - usr/bin/apt-get: all
 
 export_env:
@@ -31,7 +20,6 @@ export_env:
       - lib
   - FAKECHROOT_EXCLUDE_PATH: $/tmp:/dev:/proc:/sys
   - FAKECHROOT_CMD_SUBST: $/bin/mount=/bin/true:/sbin/ldconfig.real=/bin/true:/dev/null=/bin/true:/usr/bin/mkfifo=/bin/true
-  - VIMRUNTIME: usr/share/vim/vim74
   - TMPDIR: tmp
 
 user_shell: bin/bash
