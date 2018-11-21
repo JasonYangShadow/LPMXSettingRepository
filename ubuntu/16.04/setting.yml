@@ -1,0 +1,17 @@
+export_env:
+    - HOME: home
+    - LD_LIBRARY_PATH:
+         - usr/local/lib
+         - lib/x86_64-linux-gnu
+         - usr/lib/x86_64-linux-gnu
+         - usr/lib
+         - lib
+    - FAKECHROOT_EXCLUDE_PATH: $/tmp:/dev:/proc:/sys
+    - FKAECHROOT_CMD_SUBST: $/sbin/ldconfig=/bin/true:/usr/bin/ldd=/usr/bin/ldd:/dev/null=/bin/true
+
+user_shell: bin/bash
+__log_switch: true
+__log_level: DEBUG
+__priv_switch: true
+LPMX_LOG_LEVEL: DEBUG
+FAKECHROOT_DEBUG: true
