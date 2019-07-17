@@ -1,5 +1,0 @@
-export_env:
-        - LD_LIBRARY_LPMX:
-                - usr/local/cuda/lib64
-                - usr/local/cuda/lib64/stubs
-                - usr/lib64/nvidia
