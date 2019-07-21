@@ -1,0 +1,7 @@
+map:
+    scientific: centos
+    redhat: centos
+    linuxmint: ubuntu
+version:
+    centos: ["7", "6.7", "6", "5.5"]
+    ubuntu: ["19.04", "18.04", "16.04","14,04","12.04"]
