@@ -8,10 +8,11 @@ Vagrant.configure("2") do |config|
 
     # Prevent SharedFoldersEnableSymlinksCreate errors
     #config.vm.synced_folder ".", "/vagrant", disabled: true
+    config.vm.synced_folder ".", "/vagrant"
 
     config.vm.provider :virtualbox do |vb|
-        vb.name = 'ubuntu'
-        vb.memory = 256
+        vb.name = 'ubuntu1804'
+        vb.memory = 512
         # Vagrant needs this config on AppVeyor to spin up correctly (see https://help.appveyor.com/discussions/problems/1247-vagrant-not-working-inside-appveyor)
         vb.customize ["modifyvm", :id, "--nictype1", "Am79C973"]
         vb.customize ['modifyvm', :id, '--cableconnected1', 'on']
