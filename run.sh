@@ -9,4 +9,4 @@ if [ ! -d "share" ];then
 fi
 sudo vagrant up --provider libvirt
 sudo vagrant ssh -c "cd /vagrant && ./init.sh && ./compile.sh && cp ~/compile/dependency.tar.gz /vagrant"
-
+ls -al share/
